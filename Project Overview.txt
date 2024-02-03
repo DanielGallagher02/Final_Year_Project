@@ -1,0 +1,26 @@
+Implementation Project Folder Structure:
+
+- .venv/                          # This folder will contain my virtual environment where all the dependencies for my project are installed.
+- data/
+  - processed/                    # This is where I'll store processed data that's ready for analysis or model training.
+  - raw/                          # Unprocessed raw data
+- docs/
+  - design.md                     # A markdown file for design documentation, detailing my design choices and methodologies.
+  - usage.md                      # Instructions on how to use the system, set up the environment, etc.
+- models/
+  - cnn_model.py                  # Python script for defining your Convolutional Neural Network (CNN) model or potenitally other models.
+  - transfer_model.py             # Script for the transfer learning model.
+- notebooks/
+  - data_exploration.ipynb        # A Notebook for exploring and visualising data.
+  - model_prototyping.ipynb       # A Notebook for prototyping and initial model testing.
+- src/
+  - main.py                       # The main application script where the workflow is initiated.
+  - data_preprocessing.py         # A Script for data preprocessing functions.
+  - model_training.py             # Contains code for training my model.
+  - model_evaluation.py           # Script for evaluating my model's performance.
+  - utils.py                      # Utility functions that might be used across my project.
+- tests/
+  - test_models.py                # Unit tests for my model scripts.
+- README.md                       # Overview of my project and instructions for setting it up.
+- requirements.txt                # A list of Python packages that are required for the project.
+
