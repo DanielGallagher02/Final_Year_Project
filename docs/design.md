@@ -1,15 +1,15 @@
 # Draft Design Documentation
 
 ## Introduction
-This section should briefly introduce the design considerations of your project, touching on the main objectives and how the design aligns with your research goals. Mention the importance of design in achieving the precision required for crop prediction models.
+This section should briefly introduce the design considerations of my project, touching on the main objectives and how the design aligns with your research goals. I will also mention the importance of design in achieving the precision required for crop prediction models.
 
 ## System Requirements
 
 ### Hardware Requirements
-Detail the hardware components selected for the project, including the MacBook Air M1 and DJI Mini SE drone, and justify why they were chosen with respect to their performance and suitability for the project.
+Detail the hardware components selected for my project, including the MacBook Air M1 and DJI Mini SE drone, and justify why they were chosen with respect to their performance and suitability for the project.
 
 ### Software Requirements
-List the software tools, platforms, and libraries you used, such as Python, TensorFlow, and various data processing libraries. Explain how they support the objectives of the project.
+List the software tools, platforms, and libraries I used, such as Python, TensorFlow, and various data processing libraries. I will  explain how they support the objectives of the project.
 
 ## Functional and Non-functional Requirements
 Describe what the system is designed to do (functional requirements) and how it should perform under various conditions (non-functional requirements like performance, usability, reliability, etc.).
