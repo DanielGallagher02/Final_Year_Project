@@ -1,0 +1,7 @@
+FN (Fully Nutritional) - 12 images
+
+-N (Nitrogen Deficient) - 58 images each
+
+-P (Phosphorus Deficient) - 66 images each
+
+-K (Potassium Deficient) - 72 images each 
