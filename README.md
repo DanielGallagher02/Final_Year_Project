@@ -1,15 +1,7 @@
 # Optimising Agricultural Outcomes with Computer Vision
 
 ## Project Overview
-My project will try and apply computer vision and transfer learning to enhance crop prediction. Developed as part of my BSc (Hons) in Computing, it aims to revolutionize small-scale farming by improving harvest accuracy and yield predictions.
+This initiative harnesses the power of AI techniques, specifically advanced computer vision and transfer learning techniques, to revolutionize agricultural predictions. Crafted as an integral part of my BSc (Hons) in Computing, the project is designed to significantly enhance the accuracy of crop yield predictions and harvest outcomes, targeting the upliftment of small-scale farming practices.
 
 ## Implementation
-The implementation is built around a Python-based framework that could possibly leverage convolutional neural networks (CNN) and transfer learning for image classification. Data is processed and analyzed through custom scripts, with model training and evaluation conducted using Jupyter notebooks.
-
-## Getting Started
-1. Set up a virtual environment and install dependencies listed in `requirements.txt`.
-2. Use `data_exploration.ipynb` for initial data assessment.
-3. Define CNN models in `cnn_model.py` and try and employ transfer learning with `transfer_model.py`.
-4. Execute `main.py` to start the workflow from preprocessing to evaluation.
-
-For detailed instructions on setup and usage, please look at `docs/usage.md`.
+The core of this project is a Python-based framework that may use the state-of-the-art convolutional neural networks (CNNs) alongside transfer learning methodologies for the task of image classification. The approach is hands-on, involving data processing, with the bulk of model training and evaluation being carried out within Jupyter notebooks.
