@@ -4,6 +4,7 @@ import os
 from PIL import Image, ImageFile
 
 # Configure Pillow to handle truncated images, which can occur if the image file is incomplete or corrupted.
+# Reference: Pillow (PIL Fork) Documentation, https://pillow.readthedocs.io/en/stable/
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 def preprocess_dataset(raw_data_dir, processed_data_dir, image_ext):
