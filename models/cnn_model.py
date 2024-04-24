@@ -1,3 +1,5 @@
+# cnn_model.py
+
 # Convolutional Neural Network (CNN) for Crop Classification
 # This CNN model architecture is inspired by the VGG16 model described by Simonyan and Zisserman in their paper:
 # "Very Deep Convolutional Networks for Large-Scale Image Recognition" (https://arxiv.org/abs/1409.1556).
@@ -8,6 +10,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 
 
 # Define the CNN model structure
@@ -47,7 +50,14 @@ def build_model(input_shape, num_classes):
 
 # Create data generators
 def create_datagen(dir_path):
-    datagen = ImageDataGenerator(rescale=1./255)
+    datagen = ImageDataGenerator(rescale=1./255, 
+                                 rotation_range=40, 
+                                 width_shift_range=0.2, 
+                                 height_shift_range=0.2, 
+                                 shear_range=0.2, 
+                                 zoom_range=0.2, 
+                                 horizontal_flip=True)
+    
     return datagen.flow_from_directory(
         dir_path,
         target_size=(224, 224),

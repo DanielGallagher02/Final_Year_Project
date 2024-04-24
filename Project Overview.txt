@@ -1,9 +1,28 @@
 Implementation Project Folder Structure:
 
-- .venv/                          # This folder will contain my virtual environment where all the dependencies for my project are installed.
+
 - data/
   - processed/                    # This is where I'll store processed data that's ready for analysis or model training.
+    - Grass_processed/
+    - Lettuce_processed/
+      --K
+      --N
+      --P
+      -FN
+    - Spinach_processed/
+      - Amaranth Leaves
+      - Black Nightshade
+      - Curry Leaves
+      - Drumstick Leaves
+      - Malabar Spinach
   - raw/                          # Unprocessed raw data
+    - Cabbage 1
+    - Grass1_
+    - Grass2_
+    - Lettuce more detailed
+    - Potato1_
+    - Spinach more detailed
+    - Wheat
 - docs/
   - design.md                     # A markdown file for design documentation, detailing my design choices and methodologies.
   - usage.md                      # Instructions on how to use the system, set up the environment, etc.
@@ -16,6 +35,7 @@ Implementation Project Folder Structure:
 - src/
   - main.py                       # The main application script where the workflow is initiated.
   - data_preprocessing.py         # A Script for data preprocessing functions.
+  - data_preprocessing.py
   - model_training.py             # Contains code for training my model.
   - model_evaluation.py           # Script for evaluating my model's performance.
   - utils.py                      # Utility functions that might be used across my project.
