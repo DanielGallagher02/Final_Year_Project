@@ -1,1 +1,9 @@
 # Required Python libraries 
+tensorflow==2.15.0  #specific TensorFlow version
+Keras==3.0.0       #specific Keras version if you're using it separately from TensorFlow
+Pillow==9.5.1      
+numpy==1.26.1       
+scikit-learn==1.4.2 
+matplotlib==3.8.0  
+jupyter==4.0.1     
+pandas==1.7.2      
