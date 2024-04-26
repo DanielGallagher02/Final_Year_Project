@@ -6,10 +6,11 @@
 # The implementation is adapted to suit the specific requirements of the agricultural image dataset used in my project.
 
 import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow import keras
+from keras.models import Sequential
+from keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
+from keras.optimizers import Adam
+from keras.preprocessing.image import ImageDataGenerator
 
 
 
@@ -62,17 +63,17 @@ def create_datagen(dir_path):
         dir_path,
         target_size=(224, 224),
         batch_size=32,
-        class_mode='categorical'  # Use 'binary' if you have two classes
+        class_mode='categorical'  
     )
 
 # Main code block
 if __name__ == "__main__":
     # Define input shape and number of classes
     input_shape = (224, 224, 3)
-    num_classes = 5  # Update this to the actual number of classes you have
+    num_classes = 5  
     
-    # Assuming the base directory is where your 'processed' folder resides
-    base_dir = '../data/processed/'  # Update this to your actual directory path
+    #base directory where my 'processed' folder resides
+    base_dir = '../data/processed/'  
 
     # Creating data generators for each condition of Lettuce and type of Spinach
     # The paths should reflect the full directory structure for the training, validation,
@@ -150,4 +151,4 @@ if __name__ == "__main__":
     # TensorFlow, "Save and load models", https://www.tensorflow.org/tutorials/keras/save_and_load
 
     # Save the trained model for future use
-    model.save("../models/crop_classification_model.h5")  # Update this to your actual model save path
+    model.save("../models/crop_classification_model.h5")
