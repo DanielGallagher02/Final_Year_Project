@@ -106,7 +106,7 @@ The dataset consists of high-resolution images of crops (lettuce, spinach, and g
 ## Contributors
 
 - **Daniel Gallagher** - Lead Developer and Researcher
-- **Dr. Kevin Meehan** - Mentor for my thesis
+- **Dr. Kevin Meehan** - Mentor for my thesis document
 - **Vini Vijayan** - Project Supervisor
    
 
