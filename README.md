@@ -61,7 +61,7 @@ The dataset consists of high-resolution images of crops (lettuce, spinach, and g
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/DanielGallagher02/agriculture-crop-prediction.git
+   git clone https://github.com/DanielGallagher02/Final_Year_Project.git
    ```
 
 2. **Install Required Python Packages**:
