@@ -1,6 +1,6 @@
 # Optimising Agricultural Outcomes Through Computer Vision: A Deep Dive into Transfer Learning for Crop Predictions
 
-Welcome to my **Final Year Project** for my Bachelor's in Computing. This project focuses on using advanced computer vision and transfer learning techniques to predict crop yields, specifically aimed at supporting small-scale farms. The project utilizes deep learning models like **Convolutional Neural Networks (CNNs)** and **VGG16** to address challenges related to limited agricultural datasets.
+Welcome to my **Final Year Project** for my (Hons) Bachelor's in Computing. This project focuses on using advanced computer vision and transfer learning techniques to predict crop yields, specifically aimed at supporting small-scale farms. The project utilizes deep learning models like **Convolutional Neural Networks (CNNs)** and **VGG16** to address challenges related to limited agricultural datasets.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
