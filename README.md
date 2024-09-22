@@ -36,7 +36,7 @@ The project utilizes **Transfer Learning** by adapting the **VGG16** architectur
 ## How to Run the Project
 1. Clone the repository:
     ```bash
-    git clone https://github.com/DanielGallagher02/agricultural-crop-prediction.git
+    git clone https://github.com/DanielGallagher02/Final_Year_Project.git
     ```
 2. Install the required dependencies:
     ```bash
