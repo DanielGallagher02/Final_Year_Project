@@ -23,30 +23,37 @@ Welcome to my **Final Year Project** for my (Hons) Bachelor's in Computing. This
 
 This project explores the use of **computer vision** and **transfer learning** for improving crop yield predictions, with a particular focus on small-scale farming operations. By analyzing high-resolution crop images, the project aims to help farmers make informed decisions to improve productivity and resource management.
 
+The project addresses key challenges small-scale farmers face, such as limited datasets and climate variability, by developing a **Convolutional Neural Network (CNN)** model utilizing **VGG16**. This pre-trained model is fine-tuned to recognize crop features and predict yields, even with small and diverse datasets.
+
 The project was developed using:
 * **Python** for implementing machine learning models and handling data.
 * **TensorFlow** and **Keras** for model training and deployment.
 * **DJI Mini SE Drone** for capturing high-resolution field images for analysis.
 
-The main goal is to demonstrate how combining transfer learning with computer vision can address agricultural challenges, such as data scarcity, and offer practical solutions for farmers.
-
 ## Technologies Used
 
 ### Model Architecture
-- **VGG16 Pre-Trained Model**: Utilized for its deep feature extraction capabilities.
-- **CNNs**: Implemented with Keras and TensorFlow for image classification and prediction.
-- **Transfer Learning**: Applied to adapt the VGG16 model for crop yield prediction with limited training data.
+- **VGG16 Pre-Trained Model**: Utilized for its deep feature extraction capabilities. The model is fine-tuned for agricultural applications, especially in cases with limited training data.
+- **CNNs**: Convolutional Neural Networks, implemented with Keras and TensorFlow, were used for classifying and predicting crop yields from the images.
+- **Transfer Learning**: Transfer learning was applied to adapt the VGG16 model for our specific task, helping improve accuracy with limited agricultural datasets.
 
 ### Data Preprocessing
-- **Image Resizing**: Standardized all input images to 224x224 pixels.
-- **Data Augmentation**: Techniques like flipping, rotation, and zooming applied to increase dataset diversity.
-- **Normalization**: Applied to ensure uniformity across image data.
+- **Image Resizing**: All input images were standardized to 224x224 pixels to ensure consistency in the dataset.
+- **Data Augmentation**: Techniques such as flipping, rotation, and zooming were used to increase dataset diversity and improve model robustness.
+- **Normalization**: Pixel values were normalized to enhance the model's ability to learn meaningful patterns from the images.
 
 ## Dataset Structure
 
-The dataset consists of high-resolution images of crops (lettuce, spinach, and grass) collected via a **DJI Mini SE Drone**. It includes:
-- **Raw Images**: Captured directly from the field, containing various environmental factors (lighting, shadows).
-- **Processed Images**: Standardized and preprocessed images ready for CNN training.
+The dataset consists of high-resolution images of crops, particularly **lettuce**, **spinach**, and **grass**, collected via a **DJI Mini SE Drone**. The images reflect various environmental conditions and stages of crop growth, which were essential in training the CNN model.
+
+Key components:
+- **Raw Images**: Unprocessed images, directly captured from the field, include noise from environmental factors like lighting and shadows.
+- **Processed Images**: Standardized and preprocessed images, resized, augmented, and normalized for training and evaluation.
+
+Additionally, external datasets were incorporated:
+- **Lettuce NPK Dataset**: Sourced from Kaggle, containing detailed data on lettuce growth under varying nutrient compositions.
+- **Spinach Dataset**: Specializing in images of spinach crops.
+- **Grass Dataset**: Used to teach the model to distinguish between crops and surrounding flora.
 
 ## Installation
 
@@ -99,9 +106,13 @@ The dataset consists of high-resolution images of crops (lettuce, spinach, and g
 
 ## Challenges & Future Work
 
-- **Data Scarcity**: The project currently relies on limited data; additional datasets could improve model performance.
-- **Model Generalizability**: Future work involves adapting the model to various crops and environmental conditions.
-- **Real-Time Deployment**: The next step is to implement the model for real-time crop monitoring in the field using edge computing devices.
+### Challenges
+- **Data Scarcity**: The project relied on limited data, a common issue for small-scale farms. Transfer learning helped, but gathering larger datasets is necessary for better accuracy.
+- **Environmental Variability**: High variability in crop conditions across different farms presented challenges for model generalization.
+
+### Future Work
+- **Enhanced Model Generalization**: Future iterations will focus on improving the model's ability to generalize across diverse crop types and environmental conditions.
+- **Real-Time Deployment**: I aim to integrate real-time predictions using TensorFlow Lite, allowing farmers to monitor crop yields on-site using mobile devices.
 
 ## Contributors
 
