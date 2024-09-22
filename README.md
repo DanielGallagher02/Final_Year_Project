@@ -58,3 +58,55 @@ The dataset consists of high-resolution images of crops (lettuce, spinach, and g
 
 ### Installing
 
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/DanielGallagher02/agriculture-crop-prediction.git
+   ```
+
+2. **Install Required Python Packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Up Dataset**: Place your drone-captured images in the data/raw folder.
+
+### Executing Program
+
+1. **Run Preprocessing Script**: To resize and normalize the images:
+   ```bash
+   python preprocess_images.py
+   ```
+
+2. **Train the Model**: After preprocessing, train the CNN with:
+   ```bash
+   python train_model.py
+   ```
+
+3. **Evaluate the Model**: After training, the model will evaluate its performance and generate predictions for crop yield:
+   ```bash
+   python evaluate_model.py
+   ```
+
+## Usage
+
+- Once the model is trained, you can use it to predict crop yields by running the prediction script:
+  ```bash
+  python predict_crop_yield.py --image_path /path/to/new/image.jpg
+  ```
+
+- The prediction script will output the crop yield prediction based on the new image.
+
+## Challenges & Future Work
+
+- **Data Scarcity**: The project currently relies on limited data; additional datasets could improve model performance.
+- **Model Generalizability**: Future work involves adapting the model to various crops and environmental conditions.
+- **Real-Time Deployment**: The next step is to implement the model for real-time crop monitoring in the field using edge computing devices.
+
+## Contributors
+
+- **Daniel Gallagher** - Lead Developer and Researcher
+- **Dr. Kevin Meehan** - Mentor for my thesis
+- **Vini Vijayan** - Project Supervisor
+   
+
