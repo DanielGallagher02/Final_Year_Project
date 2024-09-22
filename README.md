@@ -116,14 +116,14 @@ The dataset consists of high-resolution images of crops (lettuce, spinach, and g
 ## Help
 
 If you encounter any issues during the setup or execution of the program, ensure:
-      - **Python** and required packages are installed.
-      - **Dataset** is correctly placed in the working directory.
-      - **Dependencies** are installed via **requirements.txt**.
+   - **Python** and required packages are installed.
+   - **Dataset** is correctly placed in the working directory.
+   - **Dependencies** are installed via **requirements.txt**.
 
 ## Acknowledgments
 
 Special thanks to:
-      - **Atlantic Technological University** for supporting this research and DJI Mini SE Drone technology used to capture high-resolution field images.
+   - **Atlantic Technological University** for supporting this research and DJI Mini SE Drone technology used to capture high-resolution field images.
 
 
    
